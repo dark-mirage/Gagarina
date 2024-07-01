@@ -1,0 +1,19 @@
+@import url("../assets/reset.css");
+
+* {
+  /* border: 1px solid black; */
+}
+
+.container {
+  max-width: 1248px;;
+  padding: 0 336px;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
