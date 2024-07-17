@@ -1,0 +1,56 @@
+:root {
+    --main-font: "Manrope", sans-serif;
+    --font-size: 16px;
+    --line-height: 24px;
+    --transition: .25s ease;
+  
+    --blue: #022438;
+    --grey-primary: #5D7C8E;
+    --grey-secondary: #7B8CA4;
+    --grey-additional: #D5DCE4;
+    --green-primary: #20B26C;
+    --green-secondary: #1C995D;
+    --white-primary: #FCFCFC;
+    --white-secondary: #EBEFF4;
+  
+    --gap-5: 5px;
+    --gap-8: 8px;
+    --gap-10: 10px;
+    --gap-12: 12px;
+    --gap-15: 15px;
+    --gap-16: 16px;
+    --gap-18: 18px;
+    --gap-20: 20px;
+    --gap-24: 24px;
+    --gap-26: 26px;
+    --gap-28: 28px;
+    --gap-30: 30px;
+    --gap-32: 32px;
+    --gap-34: 34px;
+    --gap-36: 36px;
+    --gap-40: 40px;
+    --gap-42: 42px;
+    --gap-44: 44px;
+    --gap-48: 48px;
+    --gap-50: 50px;
+    --gap-52: 52px;
+    --gap-56: 56px;
+    --gap-60: 60px;
+    --gap-62: 62px;
+    --gap-64: 64px;
+    --gap-65: 65px;
+    --gap-68: 68px;
+    --gap-70: 70px;
+    --gap-80: 80px;
+    --gap-82: 82px;
+    --gap-88: 88px;
+    --gap-108: 108px;
+    --gap-112: 112px;
+    --gap-120: 120px;
+    --gap-140: 140px;
+    --gap-160: 160px;
+    --radius-6: 6px;
+    --radius-8: 8px;
+    --radius-12: 12px;
+  }
+  

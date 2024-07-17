@@ -1,50 +1,50 @@
 <script setup lang="ts">
-import { defineComponent } from 'vue'
-import InfoComponent from '../components/InfoComponent.vue'
+import { defineComponent } from "vue";
+import InfoComponent, { type ListItem } from "../components/InfoComponent.vue";
+import SectionBackground from "../components/SectionBackgroundComponent.vue"
 </script>
 
 <template>
- <div class="tradeIn-container container">
-    <h1 class="tradeIn__h1">
-        Trade&nbsp;in
-    </h1>
-    <p class="tradeIn__paragraph">
-        Выгода до&nbsp;250&nbsp;000
-        как первоначальный взнос
-    </p>
-    <InfoComponent/>
- </div>
+  <SectionBackground class="section-background" backgroundImage="src/assets/images/tradein.jpg">
+  </SectionBackground>
+  <InfoComponent :items="items"/>
 </template>
 
 <style lang="scss">
-.tradeIn-container {
-    position: relative;
-    padding-top: 22px;
-    padding-bottom: 313px;
-    color: white;
-    background: linear-gradient(136.74deg, rgb(0, 0, 0) -5.914%,rgba(0, 0, 0, 0) 58.153%),url('../assets/images/tradein.jpg');
-    background-size: cover;
-    background-position: center;
-}
-
-.tradeIn__h1 {
-    font-size: 56px;
-    font-weight: 700;
-    line-height: 68px;
-}
-
-.tradeIn__paragraph {
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 29px;
-}
 </style>
 
 <script lang="ts">
- export default {
-    name: 'TradeInComponent',
-    components: {
-        InfoComponent
-    }
- }
+
+export default {
+  name: "TradeInComponent",
+  components: {
+    InfoComponent,
+    SectionBackground
+  },
+  props: {
+        backgroundImage: String,
+  },
+  data() {
+   return {
+      items: [
+         {
+            text: "TRADE IN как первый взнос",
+            img: "src/assets/images/info-1.svg"
+         },
+         {
+          text: "Выгода до&nbsp;250 000₽",
+          img: "src/assets/images/info-2.svg"
+         },
+         {
+          text: "иагностика бесплатно",
+          img: "src/assets/images/info-3.svg"
+         },
+         {
+          text: "Выкупаем дорого",
+          img: "src/assets/images/info-4.svg"
+         },
+      ] as ListItem[],
+   }
+}
+};
 </script>
